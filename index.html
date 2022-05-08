@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>神経衰弱ゲーム</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="mask" class="hidden">
+    <div id="rule" class="hidden">
+      <ul>
+        <li>シンプルな神経衰弱ゲームです。</li>
+        <li>同じ数字ならそのカードは消えます。</li>
+        <li>違う数字ならそのカードは元に戻ります。</li>
+        <li>全て消えたらゲームクリアです。</li>
+        <li>何ターンかかったかを結果で表示します。</li>
+      </ul>
+      <p>タイトルに戻る</p>
+    </div>
+  </div>
+
+  <main class="container">
+    <nav id="title">
+      <img src="img/LOGO.png" alt="">
+      <p>何枚で遊ぶか選んでね!<br>枚数で難易度が変わるよ!</p>
+      <ul id="level">
+        <li>20枚で遊ぶ</li>
+        <li>40枚で遊ぶ</li>
+        <li>60枚で遊ぶ</li>
+        <li>80枚で遊ぶ</li>
+        <li>100枚で遊ぶ</li>
+      </ul>
+      <p id="ruleBtn">ゲームのルール</p>
+    </nav>
+
+    <ul id="cardCase">
+    </ul>
+  </main>
+
+  <div id="result" class="hidden">
+    <p></p>
+    <a href="index.html">タイトルに戻る</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
